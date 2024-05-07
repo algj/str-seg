@@ -52,6 +52,7 @@ function strseg(string, segmentBy) {
         let content = [];
         recordReturn[segmentKey] = content;
         let { from, to, reverse } = segmentByItem;
+        // g flag removes the "index", plus we only need to find the first occurance!
         if (from instanceof RegExp)
             from = new RegExp(from.source, from.flags.replace('g', ''));
         if (to instanceof RegExp)
