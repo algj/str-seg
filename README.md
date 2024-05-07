@@ -19,7 +19,8 @@ import { strseg } from 'strseg'
 const string = '<p id="title">Hey there!</p><p>Hey</p><p>Hello</p>'
 const segments = strseg(string, {
   title: { from: '<p id="title">', to: '</p>' },
-  p: '<p>#>#</p>'
+  p: '<p>#>#</p>',
+  p_all: { from: /<p\b[^>]*>/, to: '</p>' } // we can use RegEx to target all <p> tags!
 })
 
 console.log(segments.title[0]) // "Hey there!"
