@@ -1,11 +1,11 @@
-# strseg
+# str-seg
 
 Extracts segments from a string based on provided start and end markers.
 
 ## Installation
 
 ```bash
-npm install strseg
+npm install str-seg
 ```
 
 ## Usage
@@ -13,8 +13,8 @@ npm install strseg
 ### Example:
 
 ```typescript
-import { strseg } from 'strseg'
-// let { strseg } = require('strseg');
+import { strseg } from 'str-seg'
+// let { strseg } = require('str-seg');
 
 const string = '<p id="title">Hey there!</p><p>Hey</p><p>Hello</p>'
 const segments = strseg(string, {
