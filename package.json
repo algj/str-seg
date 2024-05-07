@@ -4,6 +4,7 @@
   "description": "String Segmenter (str-seg) is a module for extracting multiple strings from text in a simple way.",
   "main": "index.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
