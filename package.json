@@ -1,6 +1,6 @@
 {
   "name": "str-seg",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "String Segmenter (str-seg) is a module for extracting multiple strings from text in a simple way.",
   "main": "index.js",
   "scripts": {
