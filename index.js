@@ -59,6 +59,18 @@ function strseg(string, segmentBy) {
             to = new RegExp(to.source, to.flags.replace('g', ''));
         if (reverse) {
             [from, to] = [to, from];
+            if (typeof from === 'string') {
+                from = from.split('').reverse().join('');
+            }
+            else {
+                throw new Error('Cannot reverse regular expressions (yet)');
+            }
+            if (typeof to === 'string') {
+                to = to.split('').reverse().join('');
+            }
+            else {
+                throw new Error('Cannot reverse regular expressions (yet)');
+            }
         }
         let startIndex = 0;
         let useStr = (reverse ? stringReverse : string);
